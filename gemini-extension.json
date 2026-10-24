@@ -1,0 +1,23 @@
+{
+  "name": "pressbox",
+  "version": "0.2.0",
+  "description": "Prepare, validate, schedule and measure approved Pressbox releases with existing workspace permissions; outbound sending and commerce are disabled.",
+  "mcpServers": {
+    "pressbox": {
+      "httpUrl": "https://agent.pressbox.com/mcp",
+      "oauth": {
+        "enabled": true,
+        "clientId": "tpc_3GbvKYW2aoohZ38xwBy67L",
+        "issuer": "https://pressbox-production.uk.auth0.com/",
+        "scopes": [
+          "pressbox:agent"
+        ],
+        "redirectUri": "http://localhost:43187/oauth/callback",
+        "audiences": [
+          "https://agent.pressbox.com/mcp"
+        ]
+      }
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

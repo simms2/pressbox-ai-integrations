@@ -1,0 +1,51 @@
+# Pressbox consequential actions require explicit user approval in Gemini CLI.
+# Server-side Pressbox confirmation fields remain authoritative as a second layer.
+
+[[rule]]
+mcpName = "pressbox"
+toolName = "submit_press_release"
+decision = "ask_user"
+priority = 100
+
+[[rule]]
+mcpName = "pressbox"
+toolName = "schedule_press_release"
+decision = "ask_user"
+priority = 100
+
+[[rule]]
+mcpName = "pressbox"
+toolName = "cancel_scheduled_press_release"
+decision = "ask_user"
+priority = 100
+
+[[rule]]
+mcpName = "pressbox"
+toolName = "attach_release_media"
+decision = "ask_user"
+priority = 100
+
+[[rule]]
+mcpName = "pressbox"
+toolName = "prepare_online_distribution"
+decision = "ask_user"
+priority = 100
+
+[[rule]]
+mcpName = "pressbox"
+toolName = "submit_online_indexing"
+decision = "ask_user"
+priority = 100
+
+[[rule]]
+mcpName = "pressbox"
+toolName = "send_distribution_campaign"
+decision = "deny"
+priority = 100
+
+[[rule]]
+mcpName = "pressbox"
+toolName = "start_subscription_checkout"
+decision = "deny"
+priority = 100
+
