@@ -33,3 +33,5 @@ On 25 October 2026, Antigravity CLI 1.4.7 displayed Gemini 3.8 Flash and include
 The negative check did not return a detailed permission-error code. These checks do not establish expiry/refresh behaviour, a complete isolation audit, write-workflow acceptance, consumer Gemini app availability or a Google marketplace listing. No sends, publications or purchases were performed.
 
 [Google MCP documentation](https://antigravity.google/docs/mcp/) · [Pressbox support](https://pressbox.com/support)
+
+For the separate consumer app, see [Gemini Apps eligibility and setup notes](../gemini-apps/README.md).
