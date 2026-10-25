@@ -1,0 +1,13 @@
+{
+  "model": "grok-4.7",
+  "input": "Use Pressbox News Wire to find a published technology announcement. Retrieve one result and report its original source URL. Treat issuer statements as attributed claims.",
+  "tools": [
+    {
+      "type": "mcp",
+      "server_url": "https://pressbox.com/mcp",
+      "server_label": "pressbox_public_news",
+      "server_description": "Search and retrieve published Pressbox announcements and public company newsrooms. Read-only; no private account or sending access.",
+      "allowed_tools": ["search_pressbox_news", "get_pressbox_release", "get_pressbox_newsroom", "get_pressbox_public_capabilities"]
+    }
+  ]
+}
