@@ -18,6 +18,14 @@ The public, read-only MCP endpoint is `https://pressbox.com/mcp`. It retrieves p
 
 See the [Gemini Apps eligibility and setup notes](gemini-apps/README.md) for a separate public News Wire route. Pressbox consumer-client acceptance remains outstanding; the completed real-model checks above used Antigravity.
 
+## More client setup guides
+
+- [Perplexity custom remote connector](perplexity/README.md)
+- [Microsoft Copilot Studio agent](copilot-studio/README.md)
+- [Grok developer API example](grok/README.md)
+
+These public News Wire starters are based on current provider documentation. Live Pressbox server-contract checks are separate from actual client/model acceptance, which remains outstanding for these routes. Use the [cross-client acceptance checklist](ACCEPTANCE.md) when testing. No curated directory publication or organic AI citation is implied.
+
 ## Legacy Gemini CLI extension
 
 The repository root retains the Gemini CLI extension for compatible developer environments. Gemini CLI 0.65.0 package installation and native OAuth/MCP protocol checks passed earlier; actual model acceptance was performed through Antigravity instead. Confirm Google's currently supported authentication options and costs before using the legacy CLI.
@@ -37,3 +45,4 @@ The server checks workspace membership and object access. The legacy extension c
 [Download the 80-second evidence walkthrough](https://github.com/simms2/pressbox-ai-integrations/raw/refs/heads/main/pressbox-review-walkthrough.mp4).
 
 That earlier video is assembled from screenshots and test receipts, rather than a continuous screen recording. It contains no passwords or tokens. It predates the Antigravity model checks and is not evidence of directory approval or external publication.
+
