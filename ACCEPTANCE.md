@@ -11,7 +11,7 @@ The public endpoint is `https://pressbox.com/mcp`. Expected tools:
 For each client, record its version/product, account eligibility, date and result:
 
 1. Add the public connection using documented settings.
-2. Discover exactly the expected read-only tools.
+2. Discover the expected read-only tools for that client configuration. Public server discovery offers all five above; the Grok starter intentionally limits the client to its four explicitly allowed tools (excluding `latest_pressbox_news`). A client allowlist is not a missing server tool.
 3. Search for published news and retrieve one returned release.
 4. Confirm the result includes the original Pressbox source URL and attributes issuer claims.
 5. Verify no private-workspace, sending or payment tools are offered.
