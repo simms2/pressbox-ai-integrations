@@ -26,6 +26,10 @@ See the [Gemini Apps eligibility and setup notes](gemini-apps/README.md) for a s
 
 These public News Wire starters are based on current provider documentation. Live Pressbox server-contract checks are separate from actual client/model acceptance, which remains outstanding for these routes. Use the [cross-client acceptance checklist](ACCEPTANCE.md) when testing. No curated directory publication or organic AI citation is implied.
 
+## Publication quality feedback
+
+Authenticated clients with release tools should follow the [beta editorial-quality guidance](EDITORIAL-QUALITY.md). Check `assessment.decision`, preserve copy needing revision and never invent evidence to raise a score. This does not expand the read-only starter configurations.
+
 ## Legacy Gemini CLI extension
 
 The repository root retains the Gemini CLI extension for compatible developer environments. Gemini CLI 0.65.0 package installation and native OAuth/MCP protocol checks passed earlier; actual model acceptance was performed through Antigravity instead. Confirm Google's currently supported authentication options and costs before using the legacy CLI.
