@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "pressbox_news_wire": {
+      "serverUrl": "https://pressbox.com/mcp",
+      "enabledTools": [
+        "search_pressbox_news",
+        "get_pressbox_release",
+        "latest_pressbox_news",
+        "get_pressbox_newsroom",
+        "get_pressbox_public_capabilities"
+      ],
+      "timeoutSeconds": 60
+    }
+  }
+}
