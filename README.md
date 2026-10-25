@@ -14,6 +14,10 @@ These files are a manual developer setup. They do not establish a consumer Gemin
 
 The public, read-only MCP endpoint is `https://pressbox.com/mcp`. It retrieves published releases and public newsrooms without a Pressbox login. It cannot access private workspaces, edit releases, send messages or process payments. An [Antigravity configuration example](antigravity/public-news-wire.json) is supplied separately; this example was checked against the public server's tool definitions, but was not part of the three model tests above.
 
+## Gemini Apps custom connection
+
+See the [Gemini Apps eligibility and setup notes](gemini-apps/README.md) for a separate public News Wire route. Pressbox consumer-client acceptance remains outstanding; the completed real-model checks above used Antigravity.
+
 ## Legacy Gemini CLI extension
 
 The repository root retains the Gemini CLI extension for compatible developer environments. Gemini CLI 0.65.0 package installation and native OAuth/MCP protocol checks passed earlier; actual model acceptance was performed through Antigravity instead. Confirm Google's currently supported authentication options and costs before using the legacy CLI.
