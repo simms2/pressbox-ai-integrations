@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "pressbox": {
+      "serverUrl": "https://agent.pressbox.com/mcp",
+      "oauth": {
+        "clientId": "tpc_3GbvKYW2aoohZ38xwBy67L"
+      },
+      "enabledTools": [
+        "get_my_pressbox_profile",
+        "list_my_workspaces",
+        "get_my_pressbox_entitlements"
+      ],
+      "timeoutSeconds": 60
+    }
+  }
+}
