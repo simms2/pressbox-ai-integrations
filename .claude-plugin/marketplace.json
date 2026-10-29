@@ -1,0 +1,17 @@
+{
+  "name": "pressbox-ai-integrations",
+  "owner": {
+    "name": "Pressbox"
+  },
+  "metadata": {
+    "description": "Pressbox governed press-release workflows and public News Wire",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "pressbox",
+      "description": "Prepare approved press releases in a connected Pressbox workspace and independently retrieve published company announcements.",
+      "source": "./"
+    }
+  ]
+}

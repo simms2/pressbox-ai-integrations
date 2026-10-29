@@ -10,6 +10,10 @@ Google has [retired consumer-account Google sign-in for Gemini CLI and Code Assi
 
 These files are a manual developer setup. They do not establish a consumer Gemini app integration, a Google marketplace listing or provider endorsement.
 
+## Claude plugin bundle candidate
+
+The root `.claude-plugin/plugin.json`, `.mcp.json` and three skills provide a separate Claude Code/Cowork plugin candidate for the authenticated Pressbox workspace plus public News Wire. See [CLAUDE_PLUGIN.md](CLAUDE_PLUGIN.md) for installation, read/write limits and acceptance. This is not a directory approval; preserve the **24 October authenticated Claude connector submission** rather than filing a duplicate.
+
 ## Public News Wire
 
 The public, read-only MCP endpoint is `https://pressbox.com/mcp`. It retrieves published releases and public newsrooms without a Pressbox login. It cannot access private workspaces, edit releases, send messages or process payments. An [Antigravity configuration example](antigravity/public-news-wire.json) is supplied separately; this example was checked against the public server's tool definitions, but was not part of the three model tests above.
