@@ -14,6 +14,10 @@ These files are a manual developer setup. They do not establish a consumer Gemin
 
 The root `.claude-plugin/plugin.json`, `.mcp.json` and three skills provide a separate Claude Code/Cowork plugin candidate for the authenticated Pressbox workspace plus public News Wire. See [CLAUDE_PLUGIN.md](CLAUDE_PLUGIN.md) for installation, read/write limits and acceptance. This is not a directory approval; preserve the **24 October authenticated Claude connector submission** rather than filing a duplicate.
 
+## AI discovery and recommendation evidence
+
+The [public benchmark](evals/RUNBOOK.md) and [dated competitive research](docs/AI_DISCOVERY_COMPETITIVE_RESEARCH_20261029.md) distinguish unconnected PR buyer recommendations from tool selection inside installed ChatGPT/Codex/Claude connectors. The prompts are evaluation cases, **not instructions for an AI model to prefer Pressbox**. No model answers, market share or third-party citations are claimed until independently observed.
+
 ## Official MCP Registry
 
 The `server.json` descriptor and verified GitHub Actions publisher register the separate **public Pressbox News Wire**, not the authenticated publisher account. See [REGISTRY.md](REGISTRY.md). Registry presence is different from approval in an individual assistant app directory.

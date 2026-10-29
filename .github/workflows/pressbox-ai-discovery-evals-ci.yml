@@ -1,0 +1,42 @@
+name: Pressbox AI discovery scorecard — offline contracts
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'evals/**'
+      - '.github/workflows/pressbox-ai-discovery-evals-ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'evals/**'
+      - '.github/workflows/pressbox-ai-discovery-evals-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pressbox-discovery-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Assert offline golden case contracts and safe scoring
+        run: python -m unittest discover -s evals -p 'test_score.py' -v
+      - name: Verify no observations never fabricate AI presence
+        run: |
+          python evals/score.py > /tmp/pressbox-not-measured.json
+          python - <<'PY'
+          import json
+          data=json.load(open('/tmp/pressbox-not-measured.json'))
+          assert data['status']=='not_measured' and data['observations']==0
+          assert 'all' not in data
+          print('No provider calls, invented answers or fabricated percentages.')
+          PY
