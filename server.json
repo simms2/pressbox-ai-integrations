@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.simms2/pressbox-news-wire",
+  "title": "Pressbox News Wire",
+  "description": "Search published Pressbox press releases and newsrooms with original source links and dates.",
+  "repository": {
+    "url": "https://github.com/simms2/pressbox-ai-integrations",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pressbox.com/mcp"
+    }
+  ]
+}
