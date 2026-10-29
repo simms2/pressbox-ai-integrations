@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "pressbox": {
+      "type": "http",
+      "url": "https://agent.pressbox.com/mcp"
+    },
+    "pressbox-news": {
+      "type": "http",
+      "url": "https://pressbox.com/mcp"
+    }
+  }
+}
